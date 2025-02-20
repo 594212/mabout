@@ -1,0 +1,82 @@
+:root {
+    --fg1: #fff;
+    --bg0: #363851;
+    --bg1: #15485c;
+    --tt-accent: #29b7d8;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Arial";
+    color-scheme: light dark;
+}
+
+body {
+    background-color: var(--bg0);
+}
+.wrapper {
+    width: 260px;
+
+}
+.image-container {
+    background-image: url("./assets/image.png");
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.eval-counter {
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    color: var(--fg1);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1ch;
+    margin-bottom: 10px;
+}
+
+.like {
+    flex-basis: 9ch;
+    margin-left: auto;
+}
+.like > button {
+    background-color: #1e98c4;
+}
+
+.eval-counter > a {
+    text-decoration: none;
+    color: #fff
+}
+
+.eval-button {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.dislike {
+    flex-basis: 9ch;
+    margin-right: auto;
+}
+
+.dislike > button {
+    background-color: #dd5161 ;
+}
+
+.add_bookmarks {
+    font-size: 16px;
+    font-family: "Arial";
+    background-color: var(--bg1);
+    color: white;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 15px;
+    height: 3rem;
+
+}
