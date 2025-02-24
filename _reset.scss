@@ -1,0 +1,123 @@
+$font-family-base: "Io sevka Nerd Font Mono";
+$font-family-heading: system-ui;
+$font-family-code: "Io sevka Nerd Font Mono";
+$font-family-base-line-height: 1.5;
+$font-family-heading-line-height: 1.1;
+$body-max-width: 70ch;
+
+html {
+    box-sizing: border-box;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    font-family: $font-family-base;
+    color-scheme: light dark;
+
+    // interpolate-size: allow-keywords;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    overscroll-behavior: contain;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+:target {
+    scroll-margin-block: 32px;
+    scroll-margin-block: 5rlh;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    line-height: $font-family-base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin-block-end: 0;
+}
+
+*:first-child {
+    margin-block-start: 0;
+}
+
+td,
+math,
+time[datetime*=":"] {
+    font-variant-numeric: tabular-nums lining-nums;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: $font-family-heading-line-height;
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+textarea:not([rows]) {
+    min-height: 10em;
+}
+ul[class],
+ol[class] {
+    list-style: "";
+}
+
+p,
+li,
+figcaption {
+    max-width: $body-max-width;
+    text-wrap: pretty;
+}
+
+code {
+    font-family: $font-family-code;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}

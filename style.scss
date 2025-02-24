@@ -1,0 +1,54 @@
+@import "reset";
+
+:root {
+    --fg1: #fff;
+    --bg0: #363851;
+    --bg1: #15485c;
+    --tt-accent: #29b7d8;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Arial";
+}
+
+body {
+    background-color: var(--bg0);
+}
+
+button {
+    border: 0;
+    background: transparent;
+}
+
+@import "avatar";
+
+.about {
+    display: flex;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    & > li {
+        display: flex;
+    }
+
+    &__item {
+        flex-basis: 300px;
+    }
+    &__value {
+        flex-basis: 300px;
+    }
+}
+
+.grid-about {
+    display: grid;
+    grid-template-columns: 280px repeat(auto-fit, minmax(600px, 1fr));
+}
+
+.grid-avatar {
+    margin-inline: 10px;
+}
