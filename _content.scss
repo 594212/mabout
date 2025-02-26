@@ -1,0 +1,25 @@
+.grid-container {
+    $padding-inline: 2rem;
+    display: grid;
+    grid-template-columns:
+        minmax($padding-inline, 1fr)
+        [content-start] min(100% - 2 * $padding-inline, 1500px) [content-end]
+        minmax($padding-inline, 1fr);
+}
+
+.content {
+    grid-column: content;
+    .title {
+        text-align: center;
+        padding: 1rem;
+        text-transform: uppercase;
+    }
+    .description {
+        padding: 1.5rem 1rem;
+        background-color: var(--bg2);
+        border-radius: 10px;
+        > p {
+            line-height: 2;
+        }
+    }
+}

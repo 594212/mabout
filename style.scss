@@ -2,9 +2,10 @@
 
 :root {
     --fg1: #fff;
-    --bg0: #363851;
+    --bg0: #1b2935;
     --bg1: #15485c;
     --tt-accent: #29b7d8;
+    --bg2: #11212e;
 }
 
 html {
@@ -52,3 +53,5 @@ button {
 .grid-avatar {
     margin-inline: 10px;
 }
+
+@import "content";
